@@ -1503,7 +1503,8 @@ export const team: Member[] = [
     department: "SCA, MRIIRS",
     group: "Session 2026-27",
     bio: "Secretary of IEEE Student Branch MRIIRS for the 2026-27 session, responsible for documentation, coordination and branch administration.",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/isha-rawat-690599203",
+    github: "https://github.com/Isha4040",
     image: portrait("photo-1487412720507-e7ab37603c6f"),
   },
   {
@@ -1567,7 +1568,8 @@ export const team: Member[] = [
     department: "SCA, MRIIRS",
     group: "Session 2026-27",
     bio: "Report Head of IEEE Student Branch MRIIRS for the 2026-27 session, overseeing event documentation and reporting.",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/sneha-sidhu-063690377",
+    github: "https://github.com/SnehaSidhu",
     image: "/teamphoto/Sneha.jpg",
   },
   {
@@ -1654,85 +1656,90 @@ export const projectCategories = [
 
 export const projects: Project[] = [
   {
-    slug: "campus-energy-monitor",
-    title: "Campus Energy Monitor",
-    category: "IoT",
-    description:
-      "A LoRaWAN sensor mesh tracking real-time electricity usage across eight campus blocks.",
-    longDescription:
-      "Twenty-four custom sensor nodes report current draw every thirty seconds to an edge gateway, which aggregates and forwards readings to a time-series database. The dashboard surfaces anomalies and has helped the facilities team cut idle-load consumption by 11%.",
-    technologies: ["ESP32", "LoRaWAN", "InfluxDB", "Grafana", "MQTT"],
-    members: ["Arjun Nair", "Dev Sharma", "Priya Menon"],
-    github: "#",
-    demo: "#",
-    image: img("photo-1509391366360-2e959784a276"),
-  },
-  {
-    slug: "lecture-notes-assistant",
-    title: "Lecture Notes Assistant",
-    category: "AI/ML",
-    description:
-      "A retrieval-augmented study assistant trained on open courseware and student notes.",
-    longDescription:
-      "Students upload lecture material, which is chunked, embedded and served through a retrieval pipeline. The assistant answers with citations back to the source slide, avoiding unsourced generation.",
-    technologies: ["Python", "FastAPI", "pgvector", "React", "Transformers"],
-    members: ["Ishita Desai", "Sanya Kapoor"],
-    github: "#",
-    demo: "#",
-    image: img("photo-1526379095098-d400fd0bf935"),
-  },
-  {
-    slug: "branch-event-platform",
-    title: "Branch Event Platform",
+    slug: "campus-sphere",
+    title: "Campus Sphere - Full-Stack Student Community Platform",
     category: "Web Development",
     description:
-      "The registration and certificate platform powering every branch event.",
+      "A full-stack student community platform that connects students, enables collaboration and provides centralized access to campus resources and activities.",
+
     longDescription:
-      "Handles registrations, attendance QR check-in, automated certificate generation and post-event analytics for organizers.",
-    technologies: ["TypeScript", "React", "Node.js", "PostgreSQL"],
-    members: ["Sanya Kapoor", "Meera Krishnan"],
-    github: "#",
+      "Campus Sphere is a full-stack student community platform designed to provide students with a centralized digital space for collaboration, communication and campus engagement. The platform allows students to create and manage profiles, connect with other students, share information and participate in campus-related activities. It uses a modern web architecture with a responsive frontend, backend APIs and database integration to manage application data. The system focuses on providing an organized and user-friendly experience for students while maintaining a scalable structure for future features and integrations.",
+
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "REST API",
+      "Tailwind CSS",
+      "Socket.IO",
+      "Git",
+      "GitHub",
+    ],
+    members: ["Arpit"],
+    github: "https://github.com/ArpitKansal01/Campus-Sphere",
+    demo: "https://campus-sphere-two.vercel.app/",
+    image: "/projects/CampusSphere.png",
+  },
+  {
+    slug: "third-eye-ai-cam",
+    title: "ThirdEye AI Cam - Edge AI Surveillance & Threat Detection System",
+    category: "AI/ML",
+    description:
+      "An offline AI-powered surveillance system that uses YOLO and OpenCV to detect potential threats in real time through a webcam.",
+    longDescription:
+      "ThirdEye AI Cam is a desktop-based Edge AI surveillance application designed for real-time threat detection without cloud dependency. It captures live webcam video and processes frames using the YOLOv8 object detection model. The system detects objects such as persons, cars, buses, trucks and motorcycles, highlights detected objects with bounding boxes and confidence scores, maintains detection history using SQLite, saves threat snapshots, displays FPS and threat count, and provides notifications and alarm alerts. A Tkinter-based dashboard allows users to start and stop the camera, monitor live detections, view recent threats and access detection history.",
+    technologies: [
+      "Python",
+      "OpenCV",
+      "YOLOv8",
+      "Ultralytics",
+      "Tkinter",
+      "Pillow(PIL)",
+      "SQLite",
+      "NumPy",
+      "Git",
+      "GitHub",
+    ],
+    members: ["Rahul"],
+    github: "https://github.com/rahul0679/ThirdEye-AI-Cam",
     demo: "#",
     image: img("photo-1461749280684-dccba630e2f6"),
   },
   {
-    slug: "autonomous-lab-rover",
-    title: "Autonomous Lab Rover",
-    category: "Robotics",
+    slug: "image-analyzer-bot",
+
+    title: "Image Analyzer Bot - AI-Powered Image Understanding System",
+
+    category: "AI/ML",
+
     description:
-      "A differential-drive rover that maps and navigates the electronics lab autonomously.",
+      "An AI-powered image analysis web application that uses Google Gemini to understand uploaded images and generate detailed textual descriptions.",
+
     longDescription:
-      "Built on ROS 2 with LiDAR-based SLAM, the rover delivers components between benches and served as the teaching platform for our robotics workshop series.",
-    technologies: ["ROS 2", "Python", "LiDAR", "Raspberry Pi"],
-    members: ["Dev Sharma", "Rohan Patil"],
-    github: "#",
-    image: img("photo-1485827404703-89b55fcc595e"),
-  },
-  {
-    slug: "credential-ledger",
-    title: "Credential Ledger",
-    category: "Blockchain",
-    description:
-      "Tamper-evident certificate verification for branch events using a permissioned ledger.",
-    longDescription:
-      "Certificates are hashed on issue and anchored on-chain, letting recruiters verify authenticity from a public lookup page without exposing student data.",
-    technologies: ["Solidity", "Hardhat", "Next-gen EVM", "React"],
-    members: ["Aditya Rane", "Sanya Kapoor"],
-    github: "#",
-    image: img("photo-1639762681485-074b7f938ba0"),
-  },
-  {
-    slug: "phishing-triage-toolkit",
-    title: "Phishing Triage Toolkit",
-    category: "Cybersecurity",
-    description:
-      "An open-source toolkit that scores suspicious campus emails and produces analyst reports.",
-    longDescription:
-      "Combines header analysis, URL reputation lookups and a lightweight classifier to triage reported phishing attempts, developed after our CTF event.",
-    technologies: ["Python", "scikit-learn", "Docker"],
-    members: ["Sanya Kapoor", "Karan Bhatia"],
-    github: "#",
-    image: img("photo-1550751827-4bd374c3f58b"),
+      "Image Analyzer Bot is a Python and Flask-based AI application that analyzes user-uploaded images using the Google Gemini API. The system accepts an image as input and uses Gemini's multimodal capabilities to identify and describe objects, people, their actions and facial expressions within the image. The generated analysis is returned as text and displayed through an interactive web interface. The application combines a Flask backend for handling image uploads and AI processing with an HTML-based frontend for presenting the generated results. The project demonstrates the integration of generative AI APIs with a web application to build an interactive computer-vision and image-understanding system.",
+
+    technologies: [
+      "Python",
+      "Flask",
+      "Google Gemini API",
+      "Generative AI",
+      "Computer Vision",
+      "HTML",
+      "CSS",
+      "Git",
+      "GitHub",
+      "Vercel",
+    ],
+
+    members: ["Arpit"],
+
+    github: "https://github.com/ArpitKansal01/Image-Analyzer-Bot",
+
+    demo: "https://image-analyzer-bot.vercel.app",
+
+    image: "/projects/ImageAnalyzer.png",
   },
 ];
 
@@ -1928,77 +1935,53 @@ export const gallery = [
   {
     id: 1,
     category: "Workshops",
-    caption: "AI workshop hands-on lab",
-    src: img("photo-1531482615713-2afd69097998"),
+    caption: "PowerBI Workshop",
+    src: "gallery/image1.png",
     tall: true,
   },
   {
     id: 2,
-    category: "Hackathons",
-    caption: "Innovate'25 midnight build",
-    src: img("photo-1504384308090-c894fdcc538d"),
+    category: "Community",
+    caption: "Expert Talk Series",
+    src: "/gallery/image2.png",
   },
   {
     id: 3,
-    category: "Team",
-    caption: "Executive committee planning",
-    src: img("photo-1522071820081-009f0129c71c"),
+    category: "Events",
+    caption: "IEEE Week Celebration",
+    src: "/gallery/image3.png",
   },
   {
     id: 4,
-    category: "Events",
-    caption: "IEEE Day opening address",
-    src: img("photo-1540575467063-178a50c2df87"),
-    tall: true,
+    category: "Team",
+    caption: "Orientation Day",
+    src: "gallery/image6.png",
   },
+
   {
     id: 5,
-    category: "Competitions",
-    caption: "Line-follower finals",
-    src: img("photo-1485827404703-89b55fcc595e"),
+    category: "Events",
+    caption: "CSR Activity",
+    src: "gallery/image5.png",
   },
   {
     id: 6,
-    category: "Community",
-    caption: "Outreach at the local school",
-    src: img("photo-1544027993-37dbfe43562a"),
+    category: "Workshops",
+    caption: "Google AI Suite",
+    src: "gallery/image4.png",
+    tall: true,
   },
   {
     id: 7,
-    category: "Workshops",
-    caption: "Soldering fundamentals",
-    src: img("photo-1581092160562-40aa08e78837"),
+    category: "Events",
+    caption: "IEEE Training Cum Internship Closing Ceremony",
+    src: "gallery/image7.png",
   },
   {
     id: 8,
     category: "Events",
-    caption: "Guest lecture on edge AI",
-    src: img("photo-1524178232363-1fb2b075b655"),
-    tall: true,
-  },
-  {
-    id: 9,
-    category: "Hackathons",
-    caption: "Final pitch round",
-    src: img("photo-1552664730-d307ca884978"),
-  },
-  {
-    id: 10,
-    category: "Team",
-    caption: "Volunteer induction day",
-    src: img("photo-1515187029135-18ee286d815b"),
-  },
-  {
-    id: 11,
-    category: "Community",
-    caption: "Alumni networking evening",
-    src: img("photo-1511578314322-379afb476865"),
-  },
-  {
-    id: 12,
-    category: "Competitions",
-    caption: "CTF scoreboard freeze",
-    src: img("photo-1550751827-4bd374c3f58b"),
+    caption: "IEEE Training Cum Internship Closing Ceremony",
+    src: "/gallery/image8.png",
     tall: true,
   },
 ];
