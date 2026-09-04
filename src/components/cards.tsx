@@ -210,10 +210,15 @@ export function TeamCard({
           />
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy/85 to-transparent opacity-90" />
           <div className="absolute inset-x-0 bottom-0 p-5 text-navy-foreground">
-            <h3 className="text-base font-bold">{member.name}</h3>
-            <p className="text-xs uppercase tracking-[0.14em] opacity-80">
+            <h3 className="text-xl text-center font-bold">{member.name}</h3>
+            <p className="text-md text-center uppercase tracking-[0.14em] opacity-80">
               {member.position}
             </p>
+            {member.membershipId && (
+              <p className="text-md text-center uppercase tracking-[0.14em] opacity-80">
+                Id: {member.membershipId}
+              </p>
+            )}
           </div>
         </div>
       </button>

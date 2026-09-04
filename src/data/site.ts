@@ -1465,6 +1465,7 @@ export type Member = {
   bio: string;
   linkedin?: string;
   github?: string;
+  membershipId?: string;
   image: string;
 };
 
@@ -1484,6 +1485,7 @@ export const team: Member[] = [
     bio: "President of IEEE Student Branch MRIIRS for the 2026-27 session, leading the branch's initiatives, events, technical activities and student engagement.",
     linkedin: "https://www.linkedin.com/in/aamnah-faiyaz06",
     github: "https://github.com/AamnahFaiyaz",
+    membershipId: "101236916",
     image: "/teamphoto/Aamnah.jpg",
   },
   {
@@ -1494,6 +1496,7 @@ export const team: Member[] = [
     group: "Session 2026-27",
     bio: "Vice President of IEEE Student Branch MRIIRS for the 2026-27 session, supporting branch leadership, planning and execution of activities.",
     linkedin: "https://www.linkedin.com/in/himani-singhal-a4b096318",
+    membershipId: "101238190",
     image: "/teamphoto/Himani.png",
   },
   {
@@ -1536,8 +1539,7 @@ export const team: Member[] = [
     department: "SCA, MRIIRS",
     group: "Session 2026-27",
     bio: "Webmaster of IEEE Student Branch MRIIRS for the 2026-27 session, managing the branch's web presence and digital platforms.",
-    linkedin: "#",
-    github: "#",
+    linkedin: "https://www.linkedin.com/in/manmeetkaurcs",
     image: portrait("photo-1517841905240-472988babdf9"),
   },
   {
@@ -1548,7 +1550,7 @@ export const team: Member[] = [
     group: "Session 2026-27",
     bio: "Operations Head of IEEE Student Branch MRIIRS for the 2026-27 session, coordinating operational planning and execution of branch activities.",
     linkedin: "#",
-    image: portrait("photo-1500648767791-00dcc994a43e"),
+    image: "/teamphoto/Ayush.png",
   },
   {
     slug: "rahul-patel",
@@ -1570,6 +1572,7 @@ export const team: Member[] = [
     bio: "Report Head of IEEE Student Branch MRIIRS for the 2026-27 session, overseeing event documentation and reporting.",
     linkedin: "https://www.linkedin.com/in/sneha-sidhu-063690377",
     github: "https://github.com/SnehaSidhu",
+    membershipId: "102491241",
     image: "/teamphoto/Sneha.jpg",
   },
   {
@@ -1579,8 +1582,9 @@ export const team: Member[] = [
     department: "SCA, MRIIRS",
     group: "Session 2026-27",
     bio: "Report Specialist of IEEE Student Branch MRIIRS for the 2026-27 session, contributing to documentation and reporting activities.",
-    linkedin: "#",
-    image: portrait("photo-1494790108377-be9c29b29330"),
+    linkedin: "https://www.linkedin.com/in/harshita-pati-1b58453a9",
+    github: "https://github.com/harshiTA007147",
+    image: "/teamphoto/Harshita.png",
   },
   {
     slug: "sai-kumar",
@@ -1589,9 +1593,9 @@ export const team: Member[] = [
     department: "SCA, MRIIRS",
     group: "Session 2026-27",
     bio: "Cyber Expert of IEEE Student Branch MRIIRS for the 2026-27 session, supporting cybersecurity-focused technical initiatives.",
-    linkedin: "#",
-    github: "#",
-    image: portrait("photo-1507003211169-0a1dd7228f2d"),
+    linkedin: "https://www.linkedin.com/in/saikumar-cybersec/",
+    github: "https://github.com/skmonkey1233",
+    image: "/teamphoto/Sai.png",
   },
   {
     slug: "arpit-kansal",
