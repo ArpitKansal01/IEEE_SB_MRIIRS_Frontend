@@ -3,17 +3,15 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams, notFound } from "next/navigation";
-import { ArrowLeft, Linkedin, Github } from "lucide-react";
+import { ArrowLeft, BookOpenText } from "lucide-react";
 
 import { BlogCard } from "@/components/cards";
 import { posts, site } from "@/data/site";
 
-
-
 export default function PostPage() {
   const params = useParams<{ slug: string }>();
   const post = posts.find((p) => p.slug === params.slug);
-  
+
   if (!post) {
     return notFound();
   }
@@ -39,7 +37,11 @@ export default function PostPage() {
         aria-hidden
       />
       <section className="relative h-[46vh] min-h-72 overflow-hidden">
-        <img src={post.image} alt={post.title} className="h-full w-full object-cover" />
+        <img
+          src={post.image}
+          alt={post.title}
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/70 to-navy/40" />
         <div className="container-page absolute inset-x-0 bottom-0 pb-10">
           <Link
@@ -77,28 +79,29 @@ export default function PostPage() {
             </ul>
             <div className="mt-8 flex gap-2">
               <a
-                href="#"
-                aria-label="Share on LinkedIn"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:border-primary hover:text-primary"
+                href={post.link}
+                aria-label={post.title}
+                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
               >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a
-                href="#"
-                aria-label="Share on X"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:border-primary hover:text-primary"
-              >
-                <Github className="h-4 w-4" />
+                <BookOpenText className="h-4 w-4" />
+                <span>Read Blog</span>
               </a>
             </div>
           </aside>
 
           <article className="max-w-2xl">
-            <p className="text-lg leading-relaxed text-muted-foreground">{post.excerpt}</p>
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              {post.excerpt}
+            </p>
             {post.content.map((s) => (
-              <section key={s.heading} id={s.heading.toLowerCase().replace(/[^a-z]+/g, "-")}>
+              <section
+                key={s.heading}
+                id={s.heading.toLowerCase().replace(/[^a-z]+/g, "-")}
+              >
                 <h2 className="mt-12 text-2xl font-bold">{s.heading}</h2>
-                <p className="mt-4 leading-relaxed text-muted-foreground">{s.body}</p>
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
               </section>
             ))}
             <div className="mt-14 rounded-3xl border border-border bg-card p-7 shadow-soft">

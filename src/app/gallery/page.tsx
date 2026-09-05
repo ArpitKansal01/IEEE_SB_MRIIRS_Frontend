@@ -1,10 +1,7 @@
-
-
 import { PageHeader } from "@/components/common/PageHeader";
 import { GalleryGrid } from "@/components/sections/GalleryGrid";
+import { JoinCTA } from "@/components/sections/JoinCTA";
 import { site } from "@/data/site";
-
-
 
 export default function GalleryPage() {
   return (
@@ -19,6 +16,7 @@ export default function GalleryPage() {
           <GalleryGrid />
         </div>
       </section>
+      <JoinCTA />
     </>
   );
 }

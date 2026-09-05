@@ -1757,133 +1757,116 @@ export type Post = {
   excerpt: string;
   content: { heading: string; body: string }[];
   image: string;
+  link: string;
 };
 
 export const posts: Post[] = [
   {
-    slug: "introduction-to-generative-ai",
-    title: "Introduction to Generative AI",
-    author: "Ishita Desai",
-    date: "12 Aug 2026",
-    category: "AI/ML",
-    readingTime: "8 min read",
+    slug: "what-ieee-taught-me-beyond-the-classroom",
+    title: "What IEEE Taught Me Beyond the Classroom",
+    author: "Aamnah Faiyaz",
+    date: "5 Sep 2026",
+    category: "Leadership",
+    readingTime: "5 min read",
     excerpt:
-      "What actually happens inside a large language model, and how students can start building with them responsibly.",
+      "How IEEE transformed my college journey by teaching me confidence, communication, leadership, delegation, adaptability, and time management beyond the classroom.",
+
     content: [
       {
-        heading: "From prediction to generation",
-        body: "Generative models learn a probability distribution over sequences. Given everything written so far, the model estimates what token is most likely to come next, then samples from that distribution. Repeated thousands of times, this simple mechanism produces essays, code and proofs.",
+        heading: "From Student Member to Report Specialist",
+        body: "When I first joined the IEEE MRIIRS Student Branch, I was simply a student member. I never expected it to become such an important part of my college journey. Within a few months, I became a Report Specialist, creating reports for various events I attended. What started as a responsibility gradually built my confidence, improved how I expressed my thoughts, and made me more comfortable putting my work out there.",
       },
+
       {
-        heading: "Why transformers changed everything",
-        body: "Self-attention lets a model weigh every token against every other token in parallel, removing the sequential bottleneck of recurrent networks. Scale then did the rest: more parameters, more data and better optimizers produced capabilities nobody explicitly programmed.",
+        heading: "Learning to Communicate and Adapt",
+        body: "I also got opportunities to host several IEEE events. Being on stage, interacting with an audience, and keeping an event moving taught me a completely different kind of confidence. There were times when things did not go according to plan and I had to change the script right then and there. Those moments taught me to stay composed, think on my feet, communicate clearly, and adapt quickly.",
       },
+
       {
-        heading: "Where to start as a student",
-        body: "Begin with a small fine-tuning project on a dataset you care about, then move to retrieval augmented generation so your system can cite sources. Evaluate rigorously — a demo that impresses is not the same as a system that is correct.",
+        heading: "Leadership and the Power of Delegation",
+        body: "Today, as the President of the IEEE Student Branch MRIIRS, I have been learning things I never imagined I would learn from a student organization. One of the biggest lessons has been delegation. I have always preferred relying on myself, but this position made me realize that I do not have to do everything alone. I can trust my team, and they can do an incredible job.",
+      },
+
+      {
+        heading: "A Leader Does Not Have to Have All the Answers",
+        body: "There have also been plenty of times when I thought I had a fantastic idea, only for someone else to come up with something better. And honestly, I love that. It taught me that being a leader does not mean having all the answers. Sometimes, it means listening and recognizing that someone else might see something you did not.",
+      },
+
+      {
+        heading: "Balancing Academics, Life and Responsibilities",
+        body: "Perhaps the biggest lesson for me has been time management. Balancing academics, personal life, extracurricular activities, and IEEE responsibilities is not easy. IEEE became a constant part of my life, and I had to learn how to make everything fit instead of letting one commitment take over everything else.",
+      },
+
+      {
+        heading: "More Than Just a Resume Experience",
+        body: "Looking back, IEEE has given me much more than event experience or something to put on a resume. It has given me opportunities to write, speak, organize, lead, delegate, listen, adapt, solve problems, and trust others. Most importantly, it has changed how I see myself.",
+      },
+
+      {
+        heading: "A Journey That Is Still Continuing",
+        body: "I joined as a student member. I became a Report Specialist. I got opportunities to host events. And today, I have the opportunity to lead a team. I definitely did not imagine this journey when I first joined. For me, IEEE has been that opportunity, and I am still learning.",
       },
     ],
+
+    image: img("photo-1521737711867-e3b97375f902"),
+    link: "https://www.linkedin.com/posts/aamnah-faiyaz06_ieee-ieeesb-ieeestudentbranch-activity-7501691831320018944-qsMM",
+  },
+  {
+    slug: "achieving-google-cloud-skill-badge-gemini-imagen",
+    title:
+      "Achieving the Google Cloud Skill Badge: Building Real-World AI Applications with Gemini and Imagen",
+    author: "Arpit Kansal",
+    date: "18 Apr 2025",
+    category: "AI/ML",
+    readingTime: "2 min read",
+    excerpt:
+      "My journey of earning the Google Cloud Skill Badge by building real-world AI applications using Gemini, Imagen, NLP, and Vertex AI.",
+
+    content: [
+      {
+        heading: "Earning the Google Cloud Skill Badge",
+        body: "I’m thrilled to share that I’ve earned the “Build Real World AI Applications with Gemini and Imagen” skill badge from Google Cloud. This accomplishment reflects my dedication to learning cutting-edge AI technologies and applying them to solve real-world challenges.",
+      },
+
+      {
+        heading: "Course Overview",
+        body: "This foundational course, offered through Google Cloud Skills Boost, provided hands-on experience with Google’s Gemini and Imagen models. These tools support capabilities such as image recognition, natural language processing, and image generation, integrated through the Vertex AI platform.",
+      },
+
+      {
+        heading: "AI Image Recognition with Gemini",
+        body: "As part of the learning experience, I developed an application that uses Gemini’s capabilities to analyze and interpret images. This can enable practical applications such as product categorization, content understanding, and content moderation.",
+      },
+
+      {
+        heading: "Image Generation with Imagen",
+        body: "I also explored Imagen for generating high-quality images from textual descriptions. This demonstrated how generative AI can be used for creative content creation, visual design, and other applications where text-to-image generation can add value.",
+      },
+
+      {
+        heading: "Natural Language Processing",
+        body: "The course also provided hands-on experience with natural language processing. I worked with applications capable of processing and understanding human language, enabling use cases such as chatbots and automated content analysis.",
+      },
+
+      {
+        heading: "Deploying AI Applications with Vertex AI",
+        body: "The learning journey culminated in deploying AI applications on Vertex AI. This provided practical exposure to building scalable AI solutions using Google Cloud’s infrastructure and services.",
+      },
+
+      {
+        heading: "Why This Achievement Matters",
+        body: "In today’s AI-driven world, the ability to develop and deploy AI applications is increasingly valuable. This skill badge validates my experience with important AI technologies while giving me practical knowledge that I can apply to future AI projects and innovations.",
+      },
+
+      {
+        heading: "Looking Ahead",
+        body: "I’m excited to continue exploring the possibilities of artificial intelligence and apply these skills to future projects. There is still a lot to learn, and this achievement is another step forward in my journey of building practical AI solutions.",
+      },
+    ],
+
     image: img("photo-1677442136019-21780ecad995"),
-  },
-  {
-    slug: "getting-started-with-iot",
-    title: "Getting Started With IoT",
-    author: "Arjun Nair",
-    date: "28 Jul 2026",
-    category: "IoT",
-    readingTime: "6 min read",
-    excerpt:
-      "Choosing a microcontroller, picking a radio protocol and shipping your first connected sensor.",
-    content: [
-      {
-        heading: "Pick the right board",
-        body: "An ESP32 covers most student projects: dual-core, Wi-Fi and Bluetooth on board, and a mature toolchain. Reach for an STM32 when you need deterministic timing or lower power.",
-      },
-      {
-        heading: "Choose the radio before the enclosure",
-        body: "Wi-Fi is easy but power hungry. BLE suits wearables. LoRaWAN wins for campus-scale deployments where nodes report infrequently over long distances.",
-      },
-      {
-        heading: "Design for failure",
-        body: "Networks drop. Buffer readings locally, use exponential backoff, and make every device recoverable over the air before you seal the enclosure.",
-      },
-    ],
-    image: img("photo-1518770660439-4636190af475"),
-  },
-  {
-    slug: "build-your-first-ml-model",
-    title: "How to Build Your First ML Model",
-    author: "Sanya Kapoor",
-    date: "10 Jul 2026",
-    category: "AI/ML",
-    readingTime: "7 min read",
-    excerpt:
-      "A practical path from a raw CSV to a validated model you can actually defend in a viva.",
-    content: [
-      {
-        heading: "Start with the question",
-        body: "Define what a correct prediction means and how you will measure it before touching a model. Your metric is your specification.",
-      },
-      {
-        heading: "Baseline first",
-        body: "A logistic regression or a mean predictor gives you the number every fancier model must beat. Skipping this step is how projects lose months.",
-      },
-      {
-        heading: "Validate honestly",
-        body: "Split by time or by group, never randomly, when your data has structure. Leakage is the single most common reason student models collapse in production.",
-      },
-    ],
-    image: img("photo-1551288049-bebda4e38f71"),
-  },
-  {
-    slug: "web-development-roadmap",
-    title: "Web Development Roadmap",
-    author: "Meera Krishnan",
-    date: "22 Jun 2026",
-    category: "Web Development",
-    readingTime: "9 min read",
-    excerpt:
-      "The order we recommend to juniors: fundamentals, one framework, then deployment and observability.",
-    content: [
-      {
-        heading: "Fundamentals are not optional",
-        body: "HTML semantics, the box model, the event loop and HTTP will outlive every framework you learn this year.",
-      },
-      {
-        heading: "Go deep on one framework",
-        body: "Learn React properly — state, effects, data fetching and rendering boundaries — before sampling alternatives.",
-      },
-      {
-        heading: "Ship it",
-        body: "A deployed project with logging and error tracking teaches you more than three tutorials on your laptop.",
-      },
-    ],
-    image: img("photo-1461749280684-dccba630e2f6"),
-  },
-  {
-    slug: "cybersecurity-fundamentals",
-    title: "Cybersecurity Fundamentals",
-    author: "Aditya Rane",
-    date: "05 Jun 2026",
-    category: "Cybersecurity",
-    readingTime: "6 min read",
-    excerpt:
-      "Threat modelling, the CIA triad and the habits that separate secure systems from lucky ones.",
-    content: [
-      {
-        heading: "Think in threat models",
-        body: "Ask who your adversary is, what they want and what they can reach. Security decisions only make sense relative to that model.",
-      },
-      {
-        heading: "Defence in depth",
-        body: "Assume any single control fails. Layer authentication, authorization, validation, logging and least privilege.",
-      },
-      {
-        heading: "Practice legally",
-        body: "Use CTFs and intentionally vulnerable labs. Never test systems you do not own or have written permission to assess.",
-      },
-    ],
-    image: img("photo-1550751827-4bd374c3f58b"),
+
+    link: "https://medium.com/@kansalarpit06/achieving-the-google-cloud-skill-badge-building-real-world-ai-applications-with-gemini-and-imagen-35d8dadae1a7?sharedUserId=kansalarpit06",
   },
 ];
 

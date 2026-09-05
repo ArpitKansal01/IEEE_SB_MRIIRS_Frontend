@@ -1,12 +1,9 @@
-
-
 import { PageHeader } from "@/components/common/PageHeader";
 import { BlogCard } from "@/components/cards";
 import { Newsletter } from "@/components/sections/Newsletter";
 import { posts, site } from "@/data/site";
 import { Reveal } from "@/components/common/Reveal";
-
-
+import { JoinCTA } from "@/components/sections/JoinCTA";
 
 export default function BlogPage() {
   return (
@@ -25,7 +22,8 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
-      <Newsletter />
+      <JoinCTA />
+      {/* <Newsletter /> */}
     </>
   );
 }
